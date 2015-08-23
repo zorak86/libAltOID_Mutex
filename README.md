@@ -1,8 +1,8 @@
 # libAltOID_Mutex
 
-Alternative OpenSource Mutex Library - by Zorak x86 
-License: LGPL v3
-Version: 1.0a
+Alternative OpenSource Mutex Library - by Zorak x86   
+License: LGPL v3  
+Version: 1.0a  
 Requires: libpthread
 
 ## Functionality
