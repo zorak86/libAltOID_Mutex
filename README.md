@@ -22,7 +22,7 @@ This library provides C++ abstraction on:
 class SomeClass : public Base_Mutex_RW
 {
 public:
-        SomeClass() { i=0; }
+	SomeClass() { i=0; }
 
 	int ReadI() 
 	{ 
