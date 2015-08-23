@@ -12,17 +12,12 @@ dnl Initialize automake
 AM_INIT_AUTOMAKE
 
 AC_PROG_CXX
-
-# C++11
 AC_LANG_CPLUSPLUS
-# check C++11 compliance and flags
-#AX_CXX_COMPILE_STDCXX_11([noext],[mandatory])
 
 # libraries:
 AC_SEARCH_LIBS([pthread_create], [pthread])
 
 #debug:
-
 AC_ARG_ENABLE(debug,
 AS_HELP_STRING([--enable-debug],
                [enable debugging, default: no]),
