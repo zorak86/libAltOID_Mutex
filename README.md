@@ -99,3 +99,10 @@ someClass.GetAnotherClassByProxy()->MethodOfAnotherClass("Hello World");
 ```
 
 And the method of another class will be called. But X will not be modified during those calls.
+
+## How to compile it
+
+1. autoreconf -i
+2. ./configure
+3. make
+4. make install
