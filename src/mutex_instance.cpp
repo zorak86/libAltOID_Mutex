@@ -1,4 +1,4 @@
-#include <alt_mutex/mutex_instance.h>
+#include "mutex_instance.h"
 #include <time.h>
 
 void milliSecsInFuture(timespec *ts, unsigned int millisecs)

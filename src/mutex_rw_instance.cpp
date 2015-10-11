@@ -1,4 +1,4 @@
-#include "alt_mutex/mutex_rw_instance.h"
+#include "mutex_rw_instance.h"
 
 Mutex_RW_Instance::Mutex_RW_Instance()
 {

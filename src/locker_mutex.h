@@ -1,7 +1,7 @@
 #ifndef LOCKER_MUTEX_H
 #define LOCKER_MUTEX_H
 
-#include "alt_mutex/mutex_instance.h"
+#include "mutex_instance.h"
 
 /**
  * Locker class for mutex

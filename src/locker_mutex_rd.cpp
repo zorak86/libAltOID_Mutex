@@ -1,4 +1,4 @@
-#include "../include/alt_mutex/locker_mutex_rd.h"
+#include "locker_mutex_rd.h"
 
 Locker_Mutex_RD::Locker_Mutex_RD(Mutex_RW_Instance *_mt)
 {

@@ -1,4 +1,4 @@
-#include "../include/alt_mutex/locker_mutex_wr.h"
+#include "locker_mutex_wr.h"
 
 Locker_Mutex_WR::Locker_Mutex_WR(Mutex_RW_Instance *_mt, bool _dontlock)
 {
