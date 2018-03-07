@@ -33,19 +33,13 @@ QMAKE_CXX += -Wno-write-strings -Wno-unused-parameter -Wno-unused-function -O3 -
 # LIB DEFS:
 TARGET = AltOID_Mutex
 TEMPLATE = lib
-VERSION      = 1.0.1
+VERSION      = 1.0.2
 # INSTALLATION:
 target.path = $$PREFIX/lib
 header_files.files = $$HEADERS
 header_files.path = $$PREFIX/include/alt_mutex
 INSTALLS += target
 INSTALLS += header_files
-# PKGCONFIG
-CONFIG += create_pc create_prl no_install_prl
-QMAKE_PKGCONFIG_LIBDIR = $$PREFIX/lib/
-QMAKE_PKGCONFIG_INCDIR = $$PREFIX/include/alt_mutex
-QMAKE_PKGCONFIG_CFLAGS = -I$$PREFIX/include/
-QMAKE_PKGCONFIG_DESTDIR = pkgconfig
 
 DISTFILES += \
     LICENSE \
@@ -53,3 +47,16 @@ DISTFILES += \
     ChangeLog \
     README.md \
     INSTALL
+
+build_pass:CONFIG(debug, debug|release) {
+    unix: TARGET = $$join(TARGET,,,_debug)
+    else: TARGET = $$join(TARGET,,,d)
+}
+
+# PKGCONFIG
+CONFIG += create_pc create_prl no_install_prl
+QMAKE_PKGCONFIG_LIBDIR = $$PREFIX/lib/
+QMAKE_PKGCONFIG_INCDIR = $$PREFIX/include/alt_mutex
+QMAKE_PKGCONFIG_CFLAGS = -I$$PREFIX/include/
+QMAKE_PKGCONFIG_DESTDIR = pkgconfig
+
