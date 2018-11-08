@@ -33,7 +33,7 @@ QMAKE_CXX += -Wno-write-strings -Wno-unused-parameter -Wno-unused-function -O3 -
 # LIB DEFS:
 TARGET = AltOID_Mutex
 TEMPLATE = lib
-VERSION      = 1.0.2
+VERSION      = 2.0.2
 # INSTALLATION:
 target.path = $$PREFIX/lib
 header_files.files = $$HEADERS
