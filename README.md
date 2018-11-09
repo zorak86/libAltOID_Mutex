@@ -2,7 +2,7 @@
 
 Alternative OpenSource Mutex Library - by Zorak x86   
 License: LGPL v3  
-Version: 2.0.2
+Version: 3.0.1
 Requires: libpthread
 
 ## Functionality

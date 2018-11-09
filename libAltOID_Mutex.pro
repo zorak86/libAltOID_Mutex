@@ -33,7 +33,7 @@ QMAKE_CXX += -Wno-write-strings -Wno-unused-parameter -Wno-unused-function -O3 -
 # LIB DEFS:
 TARGET = alt_mutex
 TEMPLATE = lib
-VERSION      = 2.0.2
+VERSION      = 3.0.1
 # INSTALLATION:
 target.path = $$PREFIX/lib
 header_files.files = $$HEADERS
@@ -51,7 +51,8 @@ DISTFILES += \
     configure.ac \
     src/Makefile.am \
     Makefile.am \
-    README
+    README \
+    autogen.sh
 
 build_pass:CONFIG(debug, debug|release) {
     unix: TARGET = $$join(TARGET,,,_debug)
