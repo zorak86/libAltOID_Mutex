@@ -103,7 +103,9 @@ And the method of another class will be called. But X will not be modified durin
 
 ## Build instructions (using libtool)
 
+```
 autoconf -i (or ./autogen.sh)
 ./configure --prefix=/usr
 make -j8
 make install
+```
