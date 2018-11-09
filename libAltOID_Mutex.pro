@@ -31,13 +31,13 @@ isEmpty(PREFIX) {
 # C++ standard.
 QMAKE_CXX += -Wno-write-strings -Wno-unused-parameter -Wno-unused-function -O3 -std=c++11 -Wunused -Wno-unused-result
 # LIB DEFS:
-TARGET = AltOID_Mutex
+TARGET = alt_mutex
 TEMPLATE = lib
 VERSION      = 2.0.2
 # INSTALLATION:
 target.path = $$PREFIX/lib
 header_files.files = $$HEADERS
-header_files.path = $$PREFIX/include/alt_mutex
+header_files.path = $$PREFIX/include/$$TARGET
 INSTALLS += target
 INSTALLS += header_files
 
@@ -46,7 +46,12 @@ DISTFILES += \
     AUTHORS \
     ChangeLog \
     README.md \
-    INSTALL
+    INSTALL \
+    autogen.sh \
+    configure.ac \
+    src/Makefile.am \
+    Makefile.am \
+    README
 
 build_pass:CONFIG(debug, debug|release) {
     unix: TARGET = $$join(TARGET,,,_debug)
