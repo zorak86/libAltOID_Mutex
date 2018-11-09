@@ -52,7 +52,8 @@ DISTFILES += \
     src/Makefile.am \
     Makefile.am \
     README \
-    autogen.sh
+    autogen.sh \
+    m4/ax_pthread.m4
 
 build_pass:CONFIG(debug, debug|release) {
     unix: TARGET = $$join(TARGET,,,_debug)

@@ -2,7 +2,7 @@
 
 Alternative OpenSource Mutex Library - by Zorak x86   
 License: LGPL v3  
-Version: 3.0.1
+Version: 3.0.1  
 Requires: libpthread
 
 ## Functionality
@@ -99,3 +99,11 @@ someClass.GetAnotherClassByProxy()->MethodOfAnotherClass("Hello World");
 ```
 
 And the method of another class will be called. But X will not be modified during those calls.
+
+
+## Build instructions (using libtool)
+
+autoconf -i (or ./autogen.sh)
+./configure --prefix=/usr
+make -j8
+make install
