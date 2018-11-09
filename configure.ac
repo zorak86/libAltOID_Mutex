@@ -1,7 +1,7 @@
 AC_CONFIG_MACRO_DIRS([m4])
 
 m4_define(LIBALTOIDMUTEXVERSION,2.0.2)
-AC_INIT(alt_mutex, LIBALTOIDMUTEXVERSION, zorak86@unmanarc.com)
+AC_INIT(alt_mutex, LIBALTOIDMUTEXVERSION, zorak.x86@gmail.com)
 AM_INIT_AUTOMAKE(alt_mutex, LIBALTOIDMUTEXVERSION)
 AM_MAINTAINER_MODE
 
@@ -23,6 +23,4 @@ AC_FUNC_MALLOC
 AC_CHECK_FUNCS([pthread_create])
 
 AC_OUTPUT(Makefile src/Makefile)
-
-#AC_CONFIG_FILES(Makefile, src/Makefile)
-AC_OUTPUT
+LT_INIT([win32-dll])
